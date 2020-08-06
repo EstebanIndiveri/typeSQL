@@ -1,0 +1,25 @@
+{
+  "name": "typesql",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "html": "copyfiles --up 1 src/public/*.html dist",
+    "dev": "nodemon dist/index.js",
+    "build": "tsc && npm run html"
+  },
+  "keywords": [],
+  "author": "esteban indiveri",
+  "license": "ISC",
+  "dependencies": {
+    "@types/express": "^4.17.7",
+    "copyfiles": "^2.3.0",
+    "express": "^4.17.1",
+    "mysql": "github:mysqljs/mysql",
+    "nodemon": "^2.0.4"
+  },
+  "devDependencies": {
+    "@types/mysql": "^2.15.15"
+  }
+}
